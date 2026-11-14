@@ -8,8 +8,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        // This links to the CSS variable we will define next
-        sans: ["var(--font-bengali)", "sans-serif"],
+        // Inter first for English, Hind Siliguri second for Bengali
+        sans: ["var(--font-inter)", "var(--font-bengali)", "sans-serif"],
       },
     },
   },
