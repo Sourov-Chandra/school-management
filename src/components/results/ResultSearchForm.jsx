@@ -18,10 +18,10 @@ export default function ResultSearchForm({ onSearch }) {
   return (
     <div className="relative w-full max-w-4xl mx-auto">
       {/* Decorative background glow behind the form */}
-      <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-[2.5rem] blur-xl opacity-20 animate-pulse"></div>
+      <div className="absolute -inset-1 bg-linear-to-r from-blue-500 to-indigo-500 rounded-[2.5rem] blur-xl opacity-20 animate-pulse"></div>
 
       {/* Main Form Card (Glassmorphism) */}
-      <div className="relative bg-white/80 backdrop-blur-xl p-8 md:p-12 rounded-[2rem] shadow-2xl shadow-blue-900/5 border border-white">
+      <div className="relative bg-white/80 backdrop-blur-xl p-8 md:p-12 rounded-4xl shadow-2xl shadow-blue-900/5 border border-white">
         <div className="flex items-center justify-center space-x-3 mb-10">
           <div className="p-3 bg-blue-50 text-blue-600 rounded-2xl">
             <Search className="w-6 h-6" />
@@ -35,7 +35,7 @@ export default function ResultSearchForm({ onSearch }) {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Class Selection */}
             <div className="relative group">
-              <label className="text-sm font-bold text-gray-700 mb-2 block uppercase tracking-wider text-xs">
+              <label className="text-sm font-bold text-gray-700 mb-2 block uppercase tracking-wider">
                 Class
               </label>
               <div className="relative flex items-center">
@@ -62,7 +62,7 @@ export default function ResultSearchForm({ onSearch }) {
 
             {/* Group Selection */}
             <div className="relative group">
-              <label className="text-sm font-bold text-gray-700 mb-2 block uppercase tracking-wider text-xs">
+              <label className="text-sm font-bold text-gray-700 mb-2 block uppercase tracking-wider">
                 Group / Section
               </label>
               <div className="relative flex items-center">
@@ -88,7 +88,7 @@ export default function ResultSearchForm({ onSearch }) {
 
             {/* Roll Number Input */}
             <div className="relative group">
-              <label className="text-sm font-bold text-gray-700 mb-2 block uppercase tracking-wider text-xs">
+              <label className="text-sm font-bold text-gray-700 mb-2 block uppercase tracking-wider">
                 Roll No.
               </label>
               <div className="relative flex items-center">
@@ -111,7 +111,7 @@ export default function ResultSearchForm({ onSearch }) {
             type="submit"
             className="w-full group relative inline-flex items-center justify-center overflow-hidden rounded-xl bg-gray-900 px-8 py-4 font-semibold text-white transition-all duration-300 hover:bg-gray-800 hover:shadow-[0_0_40px_-10px_rgba(0,0,0,0.5)] hover:-translate-y-0.5"
           >
-            <span className="absolute inset-0 bg-gradient-to-r from-blue-600 to-indigo-600 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></span>
+            <span className="absolute inset-0 bg-linear-to-r from-blue-600 to-indigo-600 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></span>
             <div className="relative flex items-center space-x-2">
               <Sparkles className="w-5 h-5 text-blue-200 group-hover:text-white transition-colors" />
               <span>Generate Academic Report</span>
